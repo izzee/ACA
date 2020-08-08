@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+
+.carousel {
+  height:100vh;
+  overflow: hidden;
+
+  img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1s, transform 2s;
+
+    &:not(.active) {
+      opacity: 0;
+      transform: scale(105%);
+    }
+  }
+
+  .previous-btn,
+  .next-btn{
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      transform: translateY(-50%) scale(200%);
+    }
+  }
+
+  .previous-btn {
+    left: 8px;
+  }
+
+  .next-btn {
+    right: 8px;
+  }
+}
