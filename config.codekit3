@@ -42,59 +42,59 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/PopcornLane1.jpg": {
-		"ft": 16384,
-		"iS": 171327,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/PopcornLane1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/PopcornLane2.jpg": {
-		"ft": 16384,
-		"iS": 933042,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/PopcornLane2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/assets/PopcornLane3.jpg": {
+	"/assets/popcorn-lane-lg-1.jpg": {
 		"ft": 16384,
 		"iS": 1379178,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/PopcornLane3.jpg",
+		"oAP": "/assets/popcorn-lane-lg-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/assets/PopcornLane4.jpg": {
+	"/assets/popcorn-lane-lg-2.jpg": {
 		"ft": 16384,
-		"iS": 1192498,
+		"iS": 933042,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/PopcornLane4.jpg",
+		"oAP": "/assets/popcorn-lane-lg-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/assets/PopcornLane5.jpg": {
+	"/assets/popcorn-lane-lg-3.jpg": {
 		"ft": 16384,
 		"iS": 1313178,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/PopcornLane5.jpg",
+		"oAP": "/assets/popcorn-lane-lg-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/assets/popcorn-lane-sm-1.jpg": {
+		"ft": 16384,
+		"iS": 171327,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/popcorn-lane-sm-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/popcorn-lane-sm-2.jpg": {
+		"ft": 16384,
+		"iS": 1192498,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/popcorn-lane-sm-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/carousel-min.js": {
