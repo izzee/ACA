@@ -1,19 +1,69 @@
 .project-detail {
+  position: sticky;
+  top:312px;
 
   .project-hero {
     position: sticky;
-    top: 280px;
+    top: 112px;
+    padding-top:32px;
     width: 100%;
     max-height: calc(100vh - 280px);
-    object-fit: cover;
-    object-position: center;
+    
     z-index: -1;
+    background-color: #f3f3f3;
+    border-top: 1px solid black;
+
+    img {
+
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   .project-info {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    position: sticky;
+    top: 0px;
+    padding-bottom: 32px;
     background-color: #f3f3f3;
+
+    > * {
+      background-color: #f3f3f3;
+      transition: transform .5s, opacity .5s, color .25s;
+    }
+
+    .project-description, .img-caption {
+    }
+
+    .back-button {
+      color: transparent;
+      padding: 32px 0;
+
+      & a {
+        color: inherit;
+      }
+    }
+
+    &.top {
+      background-color: transparent;
+      .project-description, .img-caption {
+        background-color: transparent;
+        color: transparent;
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .project-title,
+      .back-button {
+        color: black;
+        border-bottom: 1px solid;
+        box-shadow: 0 32px 0 #f3f3f3;
+      }
+    }
+
   }
 
   .img-caption {
@@ -25,6 +75,7 @@
   .project-title { 
     grid-area: 1 / 2 / 2 / 6; 
     padding: 32px 0;
+    z-index: 300;
   }
 
   .project-description { 
@@ -34,11 +85,12 @@
   } 
 
   .project-images{
+    z-index: 500;
     background-color: #f3f3f3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
-    padding-top: 112px;
+    padding-top: 160px;
 
     img {
       object-fit: contain;

@@ -1,5 +1,5 @@
-.projects {
 
+.projects {
   h3 {
     padding-bottom: 16px;
     line-height: 1;
@@ -7,12 +7,6 @@
   
   nav {
     border-bottom: 1px solid black;
-    text-align: right;
-    padding: 10px 0;
-
-    a + a {
-      margin-left: 32px;
-    }
   }
 
   .projects-wrapper {
@@ -31,5 +25,14 @@
     h5 {
       height: 32px;
     }
+  }
+}
+
+.projects-nav {
+  text-align: right;
+  padding: 10px 0;
+
+  a + a {
+    margin-left: 32px;
   }
 }
