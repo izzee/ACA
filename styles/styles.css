@@ -40,7 +40,7 @@ section {
 
 @font-face {
   font-family: 'Luxi Serif';
-  src: url("./../../fonts/LuxiSerif.woff2") format("woff2"), url("./../../fonts/LuxiSerif.woff") format("woff");
+  src: url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff2") format("woff2"), url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -230,7 +230,7 @@ footer address {
 
 .project-detail .project-info > * {
   background-color: #f3f3f3;
-  transition: transform .5s, opacity .5s, color .25s;
+  transition: transform .5s, opacity .75s, color .5s;
 }
 
 .project-detail .project-info .back-button {
