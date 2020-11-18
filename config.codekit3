@@ -119,7 +119,7 @@
 		"oF": 0
 		},
 	"/styles/sections/about.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -132,7 +132,7 @@
 		"sct": 1
 		},
 	"/styles/sections/header.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -145,7 +145,7 @@
 		"sct": 1
 		},
 	"/styles/sections/project-detail.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -158,7 +158,7 @@
 		"sct": 1
 		},
 	"/styles/sections/projects.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -177,7 +177,7 @@
 		"oF": 0
 		},
 	"/styles/settings/breakpoints.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -190,7 +190,7 @@
 		"sct": 1
 		},
 	"/styles/settings/typography.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -203,7 +203,7 @@
 		"sct": 1
 		},
 	"/styles/styles.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -2274,7 +2274,7 @@
 		"decimalPrecision": 10,
 		"emitCharset": 1,
 		"outputStyle": 1,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
