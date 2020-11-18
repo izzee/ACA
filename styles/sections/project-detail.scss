@@ -1,17 +1,30 @@
+.project-page nav{
+  @include bp($sm) {
+    border-bottom: 0px;
+  }
+}
+
 .project-detail {
-  position: sticky;
-  top:312px;
+
+  @include bp($sm) {
+    position: sticky;
+    top:312px;
+  }
+  
 
   .project-hero {
-    position: sticky;
-    top: 112px;
     padding-top:32px;
     width: 100%;
     max-height: calc(100vh - 280px);
-    
     z-index: -1;
     background-color: #f3f3f3;
-    border-top: 1px solid black;
+
+    @include bp($sm) {
+      position: sticky;
+      top: 112px;
+      border-top: 1px solid black;
+
+    }
 
     img {
       width: 100%;
@@ -21,35 +34,39 @@
   }
 
   .project-info {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    position: sticky;
-    top: 0px;
     padding-bottom: 32px;
     background-color: #f3f3f3;
-
+    
     > * {
       background-color: #f3f3f3;
       transition: transform .5s, opacity .5s, color .25s;
     }
-
- 
-    &.top {
-      background-color: transparent;
-      .project-description, .img-caption {
+    
+    @include bp($sm) {
+      display: grid;
+      position: sticky;
+      top: 0px;
+      &.top {
         background-color: transparent;
-        color: transparent;
-        transform: translateY(-100%);
-        opacity: 0;
-        z-index: -1;
-      }
-      
-      .spacer,
-      .project-title{
-        border-bottom: 1px solid black;
-        box-shadow: 0 32px 0 #f3f3f3;
+        .project-description, .img-caption {
+          background-color: transparent;
+          color: transparent;
+          transform: translateY(-100%);
+          opacity: 0;
+          z-index: -1;
+        }
+  
+        .spacer,
+        .project-title{
+          border-bottom: 1px solid black;
+          box-shadow: 0 32px 0 #f3f3f3;
+        }
       }
     }
+
+ 
+    
 
   }
 
@@ -62,7 +79,9 @@
   .project-title { 
     grid-area: 1 / 2 / 2 / 6; 
     padding: 32px 0;
-    z-index: 300;
+    @include bp($sm){
+      z-index: 300;
+    }
   }
 
   .project-description { 
@@ -76,8 +95,11 @@
     background-color: #f3f3f3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 32px;
+    grid-gap: 16px;
     padding-top: 160px;
+    @include bp($sm) {
+      grid-gap: 32px;
+    }
 
     img {
       object-fit: contain;
@@ -86,6 +108,13 @@
       &.full {
         grid-column-start: 1;
         grid-column-end: 3;
+      }
+
+      &.half {
+        @include bp-max($sm) {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
       }
     }
     

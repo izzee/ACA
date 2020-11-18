@@ -2,12 +2,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 320px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin: 160px 16px 0 16px;
+  padding: 16px 0;
   border-top: 1px solid black;
+
+  @include bp($sm){
+    margin: 320px 32px 0 32px;
+    padding: 32px 0;
+  }
 
   address {
     line-height: 1.5;

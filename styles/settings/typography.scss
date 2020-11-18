@@ -16,32 +16,54 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1;
   font-family: 'Luxi Serif', serif;
   padding-bottom: 16px;
   border-bottom: 1px solid black;
+  @include bp($sm) {
+    font-size: 48px;
+  }
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1;
   font-family: 'Luxi Serif', serif;
+  @include bp($sm) {
+    font-size: 48px;
+  }
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-family: proxima-nova-condensed, sans-serif;
+  @include bp($sm) {
+    font-size: 32px;
+  }
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: proxima-nova-condensed, sans-serif; 
+  @include bp($sm) {
+    font-size: 24px;
+  }
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Luxi Serif', serif;
+  @include bp($sm) {
+    font-size: 20px;
+  }
+}
+
+p, a, address, small {
+  font-size: 12px;
+  @include bp($sm) {
+    font-size: 16px;
+  }
 }
 
 p, address {

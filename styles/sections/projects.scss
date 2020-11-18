@@ -5,15 +5,17 @@
     line-height: 1;
   }
   
-  nav {
-    border-bottom: 1px solid black;
-  }
+  // nav {
+  // }
 
   .projects-wrapper {
-    margin: 64px 0;
-    display: grid;
+    margin: 32px 0;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
+    @include bp($sm) {
+      display: grid;
+      margin: 64px 0;
+    }
   }
 
   .project {
@@ -32,8 +34,16 @@
   height: 40px;
   text-align: right;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+    border-bottom: 1px solid black;
 
-  a + a {
-    margin-left: 32px;
+  @include bp ($sm) {
+    justify-content: flex-end;
+    a + a {
+      margin-left: 32px;
+    }
   }
+
+  
 }

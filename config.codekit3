@@ -176,6 +176,19 @@
 		"oAP": "/build/styles/settings",
 		"oF": 0
 		},
+	"/styles/settings/breakpoints.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/styles/settings/breakpoints.css",
+		"oF": 0,
+		"oS": 1,
+		"sct": 1
+		},
 	"/styles/settings/typography.scss": {
 		"aP": 0,
 		"bl": 0,

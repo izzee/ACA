@@ -12,14 +12,21 @@ address{
 }
 
 section{
-  padding: 0 32px;
+  padding: 0 16px;
+  @include bp($sm){
+    padding: 0 32px;
+  }
 }
 
 .section-header {
   position: sticky;
-  top: 112px;
-  padding-top: 32px;
+  top: 80px;
   background-color: #f3f3f3;
+  @include bp($sm) {
+    top: 112px;
+    padding-top: 32px;
+
+  }
 }
 
 .grid-5 {

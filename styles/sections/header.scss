@@ -1,12 +1,15 @@
 header {
   position: sticky;
   top: 0;
-  padding: 32px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   background-color: inherit;
   z-index: 200;
-  // background-color: transparent;
+  
+  @include bp($sm) {
+    padding: 32px;
+  }
 
   h1 {
     font-size: 16px;
@@ -20,7 +23,16 @@ header {
   nav{
     height: 16px;
     a + a {
-      margin-left: 32px;
+      margin-left: 8px;
+      @include bp($sm){
+        margin-left: 32px;
+      }
+    }
+  }
+
+  &.transparent-header {
+    @include bp($sm) {
+      background-color: transparent;;
     }
   }
 }
