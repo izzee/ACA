@@ -1,19 +1,26 @@
 .project-detail {
+  position: sticky;
+  top: 0px;
 
   .project-hero {
     position: sticky;
-    top: 280px;
+    top: 80px;
+    padding-top:32px;
     width: 100%;
     max-height: calc(100vh - 280px);
     object-fit: cover;
     object-position: center;
     z-index: -1;
+    background-color: #f3f3f3;
   }
 
   .project-info {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: #f3f3f3;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 32px;
   }
 
   .img-caption {
