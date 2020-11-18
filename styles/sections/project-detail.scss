@@ -1,9 +1,7 @@
 .project-page {
-  // @include bp($sm) {
-    nav {
-      border-bottom: 0px;
-    }
-  // }
+  nav {
+    border-bottom: 0px;
+  }
   @include bp-max($sm) {
     .section-header {
       background-color: #f3f3f3;
@@ -46,7 +44,7 @@
     
     > * {
       background-color: #f3f3f3;
-      transition: opacity .5s;
+      border-color: transparent;
       transition: transform .5s, opacity .5s, color .25s;
     }
 
@@ -70,16 +68,14 @@
     @include bp($sm) {
       top: 0px;
       display: grid;
-      > * {
-        transition: transform .5s, opacity .5s, color .25s;
-      }
     }
   }
   
   .project-title { 
     grid-area: 1 / 2 / 2 / 6; 
     padding: 16px 0;
-    
+          box-shadow: 0 32px 0 #f3f3f3;
+  
     @include bp($sm){
       padding: 32px 0;
       z-index: 300;

@@ -1,7 +1,14 @@
 .intro {
-  padding-top: 64px;
+  padding-top:16px;
   p {
 
-    font-size: 32px;
+  font-size: 16px;
+  }
+  @include bp($sm){
+    padding-top: 64px;
+    p {
+      font-size: 32px;
+    }
+
   }
 }
