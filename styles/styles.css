@@ -363,9 +363,6 @@ footer address {
   grid-template-columns: repeat(5, 1fr);
   padding-bottom: 32px;
   background-color: #f3f3f3;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
 }
 
 .project-detail .project-info > * {
@@ -395,6 +392,8 @@ footer address {
 
 @media (min-width: 768px) {
   .project-detail .project-info {
+    position: -webkit-sticky;
+    position: sticky;
     top: 0px;
     display: grid;
   }
