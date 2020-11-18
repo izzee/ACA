@@ -579,6 +579,11 @@ footer address {
   line-height: 1;
 }
 
+.contact textarea {
+  resize: vertical;
+  min-height: 24px;
+}
+
 .contact button {
   align-self: flex-end;
   -webkit-appearance: none;

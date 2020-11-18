@@ -53,6 +53,11 @@
     }
   }
 
+  textarea {
+    resize: vertical;
+    min-height: 24px;
+  }
+
 
   button {
     align-self: flex-end;
