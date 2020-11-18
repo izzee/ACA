@@ -123,45 +123,6 @@
 		"oS": 1,
 		"sct": 1
 		},
-	"/styles/sections/contact.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/sections/contact.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
-	"/styles/sections/footer.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/sections/footer.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
-	"/styles/sections/header-logo.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/sections/header-logo.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
 	"/styles/sections/header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -171,32 +132,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/styles/sections/header.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
-	"/styles/sections/hero.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/sections/hero.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
-	"/styles/sections/intro.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/sections/intro.css",
 		"oF": 0,
 		"oS": 1,
 		"sct": 1
@@ -233,32 +168,6 @@
 		"oAP": "/build/styles/settings",
 		"oF": 0
 		},
-	"/styles/settings/defaults.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/settings/defaults.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
-	"/styles/settings/reset.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/styles/settings/reset.css",
-		"oF": 0,
-		"oS": 1,
-		"sct": 1
-		},
 	"/styles/settings/typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -271,16 +180,6 @@
 		"oF": 0,
 		"oS": 1,
 		"sct": 1
-		},
-	"/styles/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/styles/styles-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/styles/styles.scss": {
 		"aP": 0,

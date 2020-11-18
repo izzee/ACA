@@ -14,7 +14,6 @@
     border-top: 1px solid black;
 
     img {
-
       width: 100%;
       object-fit: cover;
       object-position: center;
@@ -34,15 +33,7 @@
       transition: transform .5s, opacity .5s, color .25s;
     }
 
-    .back-button {
-      color: transparent;
-      padding: 32px 0;
-
-      & a {
-        color: inherit;
-      }
-    }
-
+ 
     &.top {
       background-color: transparent;
       .project-description, .img-caption {
@@ -54,9 +45,8 @@
       }
 
       .project-title,
-      .back-button {
-        color: black;
-        border-bottom: 1px solid;
+      .spacer {
+        border-bottom: 1px solid black;
         box-shadow: 0 32px 0 #f3f3f3;
       }
     }

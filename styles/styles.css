@@ -40,7 +40,7 @@ section {
 
 @font-face {
   font-family: 'Luxi Serif';
-  src: url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff") format("woff2"), url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff2") format("woff");
+  src: url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff2") format("woff2"), url("https://izzee.github.io/ACA/fonts/LuxiSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 48px;
   line-height: 1;
   font-family: 'Luxi Serif', serif;
 }
@@ -113,6 +113,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: inherit;
+  z-index: 200;
 }
 
 header h1 {
@@ -189,6 +190,7 @@ footer address {
 }
 
 .projects-nav {
+  height: 40px;
   text-align: right;
   padding: 10px 0;
 }
@@ -362,11 +364,12 @@ footer address {
 }
 
 .about > * + * {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .about .about-wrapper {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: grid;
 }
 
@@ -376,12 +379,16 @@ footer address {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 24px;
+  padding: 24px 0 24px 24px;
   flex: 3;
 }
 
+.about h4 {
+  letter-spacing: .5px;
+}
+
 .about .about-content {
-  padding: 24px;
+  padding: 24px 24px 24px 0;
   grid-column-start: 1;
   grid-column-end: 3;
   flex: 2;
@@ -405,7 +412,7 @@ footer address {
   grid-column-end: 2;
 }
 
-.about .principal-wrapper h3 {
+.about .principal-wrapper h4 {
   margin-bottom: 32px;
 }
 
