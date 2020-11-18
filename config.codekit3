@@ -98,14 +98,6 @@
 		"oAP": "/projects/example_project.html",
 		"oF": 0
 		},
-	"/projects/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/projects/index.html",
-		"oF": 0
-		},
 	"/scripts": {
 		"ft": 65536,
 		"oA": 1,
@@ -201,6 +193,16 @@
 		"oF": 0,
 		"oS": 1,
 		"sct": 1
+		},
+	"/styles/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/styles/styles-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/styles/styles.scss": {
 		"aP": 1,

@@ -24,6 +24,8 @@ address {
 
 section {
   padding: 0 16px;
+  margin: auto;
+  max-width: 1440px;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +146,12 @@ p, a, address, small {
   }
 }
 
+@media (min-width: 360px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 p, address {
   font-family: proxima-nova-condensed, sans-serif;
 }
@@ -183,17 +191,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
   background-color: inherit;
   z-index: 200;
-}
-
-@media (min-width: 768px) {
-  header {
-    padding: 32px;
-  }
 }
 
 header h1 {
@@ -222,6 +221,20 @@ header nav a + a {
 @media (min-width: 768px) {
   header.transparent-header {
     background-color: transparent;
+  }
+}
+
+.header-content {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1440px;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    padding: 32px;
   }
 }
 
@@ -355,7 +368,7 @@ footer address {
 }
 
 .project-detail .project-info {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr auto;
   padding-bottom: 32px;
   background-color: #f3f3f3;
 }
@@ -382,6 +395,13 @@ footer address {
 .project-detail .project-info.top .project-title {
     border-bottom: 1px solid black;
     box-shadow: 0 32px 0 #f3f3f3;
+    transition: border-color 2s;
+  }
+  .project-detail .project-info.top .spacer {
+    border-right: 1px solid black;
+  }
+  .project-detail .project-info.top .project-title:hover {
+    border-left: 1px solid red;
   }
 }
 
@@ -395,15 +415,14 @@ footer address {
 }
 
 .project-detail .project-title {
-  grid-area: 1 / 2 / 2 / 6;
   padding: 16px 0;
-  box-shadow: 0 32px 0 #f3f3f3;
 }
 
 @media (min-width: 768px) {
   .project-detail .project-title {
     padding: 32px 0;
     z-index: 300;
+    padding-left: 40px;
   }
 }
 
@@ -412,14 +431,25 @@ footer address {
   font-family: proxima-nova-condensed, sans-serif;
 }
 
+@media (min-width: 768px) {
+  .project-detail .img-caption {
+    width: 144px;
+  }
+}
+
 .project-detail .project-description {
-  grid-area: 2 / 2 / 3 / 6;
   font-family: proxima-nova-condensed, sans-serif;
 }
 
 @media (max-width: 767px) {
   .project-detail .project-description {
     margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-detail .project-description {
+    padding-left: 40px;
   }
 }
 

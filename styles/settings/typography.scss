@@ -64,10 +64,17 @@ p, a, address, small {
   @include bp($sm) {
     font-size: 16px;
   }
-  @include bp-max($sm){
+  @include bp-max($sm) {
     line-height: 1.5;
   }
 }
+
+p{
+  @include bp($xs) {
+    font-size: 16px;
+  }
+}
+
 
 p, address {
   font-family: proxima-nova-condensed, sans-serif;

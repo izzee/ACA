@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: $white;
 }
 
 nav a.active,
@@ -16,12 +16,14 @@ section{
   @include bp($sm){
     padding: 0 32px;
   }
+  margin: auto;
+  max-width: 1440px;
 }
 
 .section-header {
   position: sticky;
   top: 80px;
-  background-color: #f3f3f3;
+  background-color: $white;
   @include bp($sm) {
     top: 112px;
     padding-top: 32px;
