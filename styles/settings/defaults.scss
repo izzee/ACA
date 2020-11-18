@@ -1,0 +1,28 @@
+body {
+  background-color: #f3f3f3;
+}
+
+nav a.active,
+nav a:hover {
+  color: #5B98CA;
+}
+
+address{
+  font-style: normal;
+}
+
+section{
+  padding: 0 32px;
+}
+
+.section-header {
+  position: sticky;
+  top: 112px;
+  padding-top: 32px;
+  background-color: #f3f3f3;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}

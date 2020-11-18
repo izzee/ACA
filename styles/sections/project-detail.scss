@@ -1,0 +1,56 @@
+.project-detail {
+
+  .project-hero {
+    position: sticky;
+    top: 280px;
+    width: 100%;
+    max-height: calc(100vh - 280px);
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  .project-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #f3f3f3;
+  }
+
+  .img-caption {
+    grid-area: 2 / 1;
+    line-height: 1.5;
+    font-family: proxima-nova-condensed, sans-serif; 
+  }
+
+  .project-title { 
+    grid-area: 1 / 2 / 2 / 6; 
+    padding: 32px 0;
+  }
+
+  .project-description { 
+    grid-area: 2 / 2 / 3 / 6;
+    line-height: 1.5;
+    font-family: proxima-nova-condensed, sans-serif; 
+  } 
+
+  .project-images{
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    padding-top: 112px;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+
+      &.full {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+    
+  }
+
+  
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Luxi Serif';
+  src: url('../../fonts/LuxiSerif.woff2') format('woff2'),
+       url('../../fonts/LuxiSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: proxima-nova, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+  font-family: proxima-nova-condensed, sans-serif;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1;
+  font-family: 'Luxi Serif', serif;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: proxima-nova-condensed, sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: proxima-nova-condensed, sans-serif; 
+}
+
+h5 {
+  font-size: 20px;
+  font-family: 'Luxi Serif', serif;
+}
+
+p, address {
+  font-family: proxima-nova-condensed, sans-serif;
+}
