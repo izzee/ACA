@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 56px;
   line-height: 1;
   font-family: 'Luxi Serif', serif;
 }
@@ -170,12 +170,6 @@ footer address {
 
 .projects nav {
   border-bottom: 1px solid black;
-  text-align: right;
-  padding: 10px 0;
-}
-
-.projects nav a + a {
-  margin-left: 32px;
 }
 
 .projects .projects-wrapper {
@@ -194,30 +188,77 @@ footer address {
   height: 32px;
 }
 
+.projects-nav {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.projects-nav a + a {
+  margin-left: 32px;
+}
+
 .project-detail {
   position: sticky;
-  top: 0px;
+  top: 312px;
 }
 
 .project-detail .project-hero {
   position: sticky;
-  top: 80px;
+  top: 112px;
   padding-top: 32px;
   width: 100%;
   max-height: calc(100vh - 280px);
-  object-fit: cover;
-  object-position: center;
   z-index: -1;
   background-color: #f3f3f3;
+  border-top: 1px solid black;
+}
+
+.project-detail .project-hero img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-detail .project-info {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background-color: #f3f3f3;
   position: sticky;
   top: 0px;
   padding-bottom: 32px;
+  background-color: #f3f3f3;
+}
+
+.project-detail .project-info > * {
+  background-color: #f3f3f3;
+  transition: transform .5s, opacity .5s, color .25s;
+}
+
+.project-detail .project-info .back-button {
+  color: transparent;
+  padding: 32px 0;
+}
+
+.project-detail .project-info .back-button a {
+  color: inherit;
+}
+
+.project-detail .project-info.top {
+  background-color: transparent;
+}
+
+.project-detail .project-info.top .project-description, .project-detail .project-info.top .img-caption {
+  background-color: transparent;
+  color: transparent;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.project-detail .project-info.top .project-title,
+.project-detail .project-info.top .back-button {
+  color: black;
+  border-bottom: 1px solid;
+  box-shadow: 0 32px 0 #f3f3f3;
 }
 
 .project-detail .img-caption {
@@ -229,6 +270,7 @@ footer address {
 .project-detail .project-title {
   grid-area: 1 / 2 / 2 / 6;
   padding: 32px 0;
+  z-index: 300;
 }
 
 .project-detail .project-description {
@@ -238,11 +280,12 @@ footer address {
 }
 
 .project-detail .project-images {
+  z-index: 500;
   background-color: #f3f3f3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
-  padding-top: 112px;
+  padding-top: 160px;
 }
 
 .project-detail .project-images img {
