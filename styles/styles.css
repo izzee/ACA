@@ -235,15 +235,6 @@ footer address {
   transition: transform .5s, opacity .5s, color .25s;
 }
 
-.project-detail .project-info .back-button {
-  color: transparent;
-  padding: 32px 0;
-}
-
-.project-detail .project-info .back-button a {
-  color: inherit;
-}
-
 .project-detail .project-info.top {
   background-color: transparent;
 }
@@ -256,10 +247,9 @@ footer address {
   z-index: -1;
 }
 
-.project-detail .project-info.top .project-title,
-.project-detail .project-info.top .back-button {
-  color: black;
-  border-bottom: 1px solid;
+.project-detail .project-info.top .spacer,
+.project-detail .project-info.top .project-title {
+  border-bottom: 1px solid black;
   box-shadow: 0 32px 0 #f3f3f3;
 }
 
@@ -364,7 +354,7 @@ footer address {
 }
 
 .about > * + * {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 .about .about-wrapper {

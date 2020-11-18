@@ -98,6 +98,14 @@
 		"oAP": "/projects/example_project.html",
 		"oF": 0
 		},
+	"/projects/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/projects/index.html",
+		"oF": 0
+		},
 	"/scripts": {
 		"ft": 65536,
 		"oA": 1,
@@ -193,6 +201,14 @@
 		"oF": 0,
 		"oS": 1,
 		"sct": 1
+		},
+	"/test/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test/index.html",
+		"oF": 0
 		}
 	},
 "hooks": [
