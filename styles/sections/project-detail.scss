@@ -1,7 +1,4 @@
 .project-page {
-  nav {
-    border-bottom: 0px;
-  }
   @include bp-max($sm) {
     .section-header {
       background-color: #f3f3f3;
@@ -19,13 +16,11 @@
     max-height: calc(100vh - 280px);
     z-index: -1;
     background-color: #f3f3f3;
-    border-top: 1px solid black;
     
     @include bp($sm) {
       position: sticky;
       top: 112px;
       padding-top:32px;
-
     }
 
     img {

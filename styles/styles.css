@@ -317,10 +317,6 @@ footer address {
   }
 }
 
-.project-page nav {
-  border-bottom: 0px;
-}
-
 @media (max-width: 767px) {
   .project-page .section-header {
     background-color: #f3f3f3;
@@ -339,7 +335,6 @@ footer address {
   max-height: calc(100vh - 280px);
   z-index: -1;
   background-color: #f3f3f3;
-  border-top: 1px solid black;
 }
 
 @media (min-width: 768px) {
