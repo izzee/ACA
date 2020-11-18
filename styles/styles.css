@@ -152,7 +152,7 @@ p, a, address, small {
   }
 }
 
-p, address {
+p, address, small {
   font-family: proxima-nova-condensed, sans-serif;
 }
 
@@ -540,7 +540,7 @@ footer address {
   }
 }
 
-.contact input {
+.contact input, .contact textarea {
   padding: 0px 8px;
   height: 24px;
   margin-top: 32px;
@@ -554,27 +554,27 @@ footer address {
   line-height: 1;
 }
 
-.contact input::-webkit-input-placeholder {
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
   opacity: 1;
   line-height: 1;
 }
 
-.contact input::-moz-placeholder {
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
   opacity: 1;
   line-height: 1;
 }
 
-.contact input:-ms-input-placeholder {
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
   opacity: 1;
   line-height: 1;
 }
 
-.contact input::-ms-input-placeholder {
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
   opacity: 1;
   line-height: 1;
 }
 
-.contact input::placeholder {
+.contact input::placeholder, .contact textarea::placeholder {
   opacity: 1;
   line-height: 1;
 }
@@ -584,7 +584,6 @@ footer address {
   -webkit-appearance: none;
   border: 1px solid black;
   font-size: 16px;
-  line-height: 2;
   height: 32px;
   width: 80px;
   margin: 24px 0;
