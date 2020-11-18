@@ -6,9 +6,8 @@ const description = document.querySelector('.project-description');
 
 window.addEventListener('scroll', () => {
   if(window.innerWidth > 768){
-    console.log(hero.getBoundingClientRect());
-    const scrollRemaining = Math.round(info.getBoundingClientRect().y / window.innerHeight * 100) / 100;
-    hero.style.opacity = scrollRemaining;
+    const scrollRemaining = (Math.round(info.getBoundingClientRect().y)/ (window.innerHeight - 145) * 100) / 100;
     info.classList.toggle('top', scrollRemaining <= 0);
+    hero.style.opacity = scrollRemaining;
   }
 })

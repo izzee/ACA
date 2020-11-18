@@ -6,8 +6,9 @@
   .about-wrapper {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-
-    display: grid;
+    @include bp($sm){
+      display: grid;
+    }
 
     img {
       grid-column-start: 3;
@@ -33,7 +34,6 @@
 
     p {
       line-height: 1.5;
-      margin-top: 24px;
     }
   }
 

@@ -30,6 +30,8 @@ section{
 }
 
 .grid-5 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  @include bp($sm){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

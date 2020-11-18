@@ -64,6 +64,9 @@ p, a, address, small {
   @include bp($sm) {
     font-size: 16px;
   }
+  @include bp-max($sm){
+    line-height: 1.66666;
+  }
 }
 
 p, address {
