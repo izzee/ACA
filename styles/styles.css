@@ -40,7 +40,7 @@ section {
 
 @font-face {
   font-family: 'Luxi Serif';
-  src: url("./../../fonts/LuxiSerif.woff2") format("woff2"), url("./../../fonts/LuxiSerif.woff") format("woff");
+  src: url("../fonts/LuxiSerif.woff2") format("woff2"), url("../fonts/LuxiSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
