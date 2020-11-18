@@ -1,14 +1,22 @@
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   margin: 160px 16px 0 16px;
-  padding: 16px 0;
-  border-top: 1px solid black;
+  
+  .footer-content {
+    padding: 16px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid black;
+    max-width: 1440px;
+  }
 
   @include bp($sm){
     margin: 320px 32px 0 32px;
-    padding: 32px 0;
+
+    .footer-content {
+      padding: 32px 0;
+    }
   }
 
   address {

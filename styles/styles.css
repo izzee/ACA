@@ -266,17 +266,24 @@ header nav a + a {
 }
 
 footer {
+  margin: 160px 16px 0 16px;
+}
+
+footer .footer-content {
+  padding: 16px 0;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 160px 16px 0 16px;
-  padding: 16px 0;
   border-top: 1px solid black;
+  max-width: 1440px;
 }
 
 @media (min-width: 768px) {
   footer {
     margin: 320px 32px 0 32px;
+  }
+  footer .footer-content {
     padding: 32px 0;
   }
 }
