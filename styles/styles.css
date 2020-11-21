@@ -259,17 +259,6 @@ header nav a + a {
   width: 100vw;
 }
 
-.intro-hero {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.intro-hero img {
-  width: 100vw;
-  height: 100vh;
-}
-
 .intro {
   padding-top: 16px;
 }
@@ -292,7 +281,7 @@ footer {
 }
 
 footer .footer-content {
-  padding: 8px 0;
+  padding: 8px 0 16px 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -304,9 +293,6 @@ footer .footer-content {
 @media (min-width: 768px) {
   footer {
     margin: 320px 32px 0 32px;
-  }
-  footer .footer-content {
-    padding: 32px 0;
   }
 }
 
