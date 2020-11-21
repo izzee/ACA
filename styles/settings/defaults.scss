@@ -2,6 +2,10 @@ body {
   background-color: $white;
 }
 
+img {
+  display: block;
+}
+
 nav a.active,
 nav a:hover {
   color: #5B98CA;
@@ -12,7 +16,7 @@ address{
 }
 
 section{
-  padding: 0 16px;
+  padding: 0 8px;
   @include bp($sm){
     padding: 0 32px;
   }
@@ -22,7 +26,8 @@ section{
 
 .section-header {
   position: sticky;
-  top: 80px;
+  top: 64px;
+  padding-top: 16px;
   background-color: $white;
   @include bp($sm) {
     top: 112px;

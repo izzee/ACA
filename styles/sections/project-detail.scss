@@ -1,4 +1,9 @@
 .project-page {
+  @include bp($sm){
+    nav {
+      border-bottom: 0;
+    }
+  }
   @include bp-max($sm) {
     .section-header {
       background-color: $white;
@@ -12,15 +17,17 @@
 
   .project-hero {
     width: 100%;
-    padding-top: 16px;
-    max-height: calc(100vh - 280px);
+    max-height: calc(100vh - 256px);
     z-index: -1;
     background-color: $white;
+    margin-top: 8px;
     
     @include bp($sm) {
+      padding-top: 16px;
+      margin-top: 0;
       position: sticky;
       top: 112px;
-      padding-top:32px;
+      border-top: 1px solid black;
     }
 
     img {
@@ -54,17 +61,11 @@
         .spacer,
         .project-title{
           border-bottom: 1px solid black;
-          box-shadow: 0 32px 0 $white;
+          box-shadow: 0 16px 0 $white;
           transition: border-color 2s;
         }
         .spacer {
-           border-right: 1px solid black;
-
-          // border-left: 1px solid black;
-        }
-
-        .project-title:hover {
-          border-left: 1px solid red;
+          border-right: 1px solid black;
         }
       }
     }
@@ -87,6 +88,7 @@
   .img-caption {
     grid-area: 2 / 1;
     font-family: proxima-nova-condensed, sans-serif; 
+    line-height: 1.2;
     @include bp($sm) {
       width: 144px;
     }
@@ -114,13 +116,12 @@
     background-color: $white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
+    grid-gap: 8px;
     padding-top: 16px;
     @include bp($sm) {
+      grid-gap: 16px;
       padding-top: 160px;
-      grid-gap: 32px;
     }
-
     @include bp-max($sm){
       z-index: 500;
       position: relative;

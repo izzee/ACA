@@ -13,6 +13,10 @@ body {
   background-color: #f3f3f3;
 }
 
+img {
+  display: block;
+}
+
 nav a.active,
 nav a:hover {
   color: #5B98CA;
@@ -23,7 +27,7 @@ address {
 }
 
 section {
-  padding: 0 16px;
+  padding: 0 8px;
   margin: auto;
   max-width: 1440px;
 }
@@ -37,7 +41,8 @@ section {
 .section-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;
+  top: 64px;
+  padding-top: 16px;
   background-color: #f3f3f3;
 }
 
@@ -67,21 +72,22 @@ body {
   font-family: proxima-nova, sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1;
   font-family: 'Luxi Serif', serif;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid black;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
+    font-size: 40px;
+    padding-bottom: 16px;
   }
 }
 
@@ -120,14 +126,19 @@ h4 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Luxi Serif', serif;
 }
 
 @media (min-width: 768px) {
   h5 {
-    font-size: 20px;
+    font-size: 24px;
   }
+}
+
+h6 {
+  font-family: 'Luxi Serif', serif;
+  font-size: 16px;
 }
 
 p, a, address, small {
@@ -156,7 +167,7 @@ p, address, small {
   font-family: proxima-nova-condensed, sans-serif;
 }
 
-.header-logo {
+.hero-logo, .header-logo {
   color: black;
   text-align: center;
   display: flex;
@@ -166,23 +177,23 @@ p, address, small {
   height: 48px;
 }
 
-.header-logo .logo-chabon {
+.hero-logo .logo-chabon, .header-logo .logo-chabon {
   font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  .header-logo .logo-chabon {
+  .hero-logo .logo-chabon, .header-logo .logo-chabon {
     font-size: 24px;
   }
 }
 
-.header-logo .logo-architects {
+.hero-logo .logo-architects, .header-logo .logo-architects {
   font-size: 13px;
   letter-spacing: .5px;
 }
 
 @media (min-width: 768px) {
-  .header-logo .logo-architects {
+  .hero-logo .logo-architects, .header-logo .logo-architects {
     font-size: 16px;
   }
 }
@@ -225,7 +236,7 @@ header nav a + a {
 }
 
 .header-content {
-  padding: 16px;
+  padding: 8px;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -248,6 +259,17 @@ header nav a + a {
   width: 100vw;
 }
 
+.intro-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.intro-hero img {
+  width: 100vw;
+  height: 100vh;
+}
+
 .intro {
   padding-top: 16px;
 }
@@ -266,11 +288,11 @@ header nav a + a {
 }
 
 footer {
-  margin: 160px 16px 0 16px;
+  margin: 80px 8px 0 8px;
 }
 
 footer .footer-content {
-  padding: 16px 0;
+  padding: 8px 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -298,25 +320,34 @@ footer address {
 }
 
 .projects .projects-wrapper {
-  margin: 32px 0;
+  margin: 8px 0;
+  grid-gap: 8px;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
 }
 
 @media (min-width: 768px) {
   .projects .projects-wrapper {
     display: grid;
-    margin: 64px 0;
+    grid-gap: 16px;
+    margin: 16px 0;
   }
 }
 
 .projects .project img {
   width: 100%;
-  max-height: 360px;
 }
 
 .projects .project h5 {
   height: 32px;
+  line-height: 1;
+  padding-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .projects .project h5 {
+    padding-top: 8px;
+    height: 40px;
+  }
 }
 
 .projects-nav {
@@ -337,6 +368,12 @@ footer address {
   }
 }
 
+@media (min-width: 768px) {
+  .project-page nav {
+    border-bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .project-page .section-header {
     background-color: #f3f3f3;
@@ -351,18 +388,20 @@ footer address {
 
 .project-detail .project-hero {
   width: 100%;
-  padding-top: 16px;
-  max-height: calc(100vh - 280px);
+  max-height: calc(100vh - 256px);
   z-index: -1;
   background-color: #f3f3f3;
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
   .project-detail .project-hero {
+    padding-top: 16px;
+    margin-top: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 112px;
-    padding-top: 32px;
+    border-top: 1px solid black;
   }
 }
 
@@ -401,14 +440,11 @@ footer address {
   .project-detail .project-info.top .spacer,
 .project-detail .project-info.top .project-title {
     border-bottom: 1px solid black;
-    box-shadow: 0 32px 0 #f3f3f3;
+    box-shadow: 0 16px 0 #f3f3f3;
     transition: border-color 2s;
   }
   .project-detail .project-info.top .spacer {
     border-right: 1px solid black;
-  }
-  .project-detail .project-info.top .project-title:hover {
-    border-left: 1px solid red;
   }
 }
 
@@ -436,6 +472,7 @@ footer address {
 .project-detail .img-caption {
   grid-area: 2 / 1;
   font-family: proxima-nova-condensed, sans-serif;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -471,14 +508,14 @@ footer address {
   background-color: #f3f3f3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 16px;
+  grid-gap: 8px;
   padding-top: 16px;
 }
 
 @media (min-width: 768px) {
   .project-detail .project-images {
+    grid-gap: 16px;
     padding-top: 160px;
-    grid-gap: 32px;
   }
 }
 
@@ -632,7 +669,7 @@ footer address {
 
 @media (min-width: 768px) {
   .about .about-wrapper img {
-    padding: 24px 0 24px 24px;
+    padding: 16px 0 16px 16px;
   }
 }
 
@@ -648,8 +685,7 @@ footer address {
 
 @media (min-width: 768px) {
   .about .about-content {
-    padding: 24px 24px 24px 0;
-    border-right: 1px solid black;
+    padding: 16px 16px 16px 0;
   }
 }
 
@@ -692,4 +728,102 @@ footer address {
 
 .about .team-member .avatar {
   margin-bottom: 8px;
+}
+
+.homepage {
+  overflow: scroll;
+}
+
+.homepage header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  transition: transform .5s, opacity .2s;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.homepage .hero {
+  min-height: 100vh;
+  transition: opacity .5s;
+}
+
+.homepage .hero img {
+  min-width: 100vw;
+  height: 100vh;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s;
+}
+
+.homepage .hero.hidden {
+  opacity: 0;
+}
+
+.homepage .hero .hero-image {
+  position: relative;
+}
+
+.homepage .hero img:not(.active) {
+  opacity: 0;
+}
+
+.homepage .hero .header-logo {
+  z-index: 200;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  top: calc((var(--vh, 1vh) * 50));
+  background-color: #00000033;
+  color: white;
+  width: 122px;
+  height: 122px;
+  border: .75px solid;
+  transform: translate(-50%, -50%);
+  transition: color 1s, background-color 1s;
+}
+
+@media (min-width: 768px) {
+  .homepage .hero .header-logo {
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+
+.homepage .hero .header-logo.dark {
+  color: #000000;
+  background-color: #ffffff99;
+}
+
+.homepage .intro {
+  min-height: 100vh;
+  opacity: 0;
+  transition: transform .5s, opacity .5s;
+  transform: translateY(112px);
+}
+
+.homepage.half-scroll .intro {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.homepage.half-scroll .hero .header-logo {
+  color: transparent;
+  background-color: transparent;
+}
+
+.homepage.full-scroll header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.homepage.full-scroll .heroImg {
+  opacity: 0;
 }
