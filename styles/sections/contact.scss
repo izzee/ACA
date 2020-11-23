@@ -35,12 +35,12 @@
   }
 
   input, textarea {
-    padding: 0px 8px;
+    padding: 8px 4px 0;
     height: 24px;
     margin-top: 32px;
     border: none;
     border-radius: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     background-color: transparent;
     border-bottom: 1px solid black;
     font-family: proxima-nova-condensed, sans-serif;
@@ -49,7 +49,24 @@
 
     &::placeholder {
       opacity: 1;
-      line-height: 1;
+      // line-height: 1;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $blue;
+      // background-color: $gray;
+      &::placeholder {
+        color: $blue;
+      }
+    }
+    &:invalid {
+      outline: none;
+      // color: $red;
+      box-shadow: none;
+      &::placeholder {
+        color: $red;
+      }
     }
   }
 

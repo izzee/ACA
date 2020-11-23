@@ -1,5 +1,13 @@
 .homepage {
   overflow: scroll;
+
+  .top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 112px;
+    z-index :100;
+  }
   header {
     position: fixed;
     top: 0;
@@ -7,89 +15,141 @@
     z-index: 200;
     transition: transform .5s, opacity .2s;
     color: inherit;
-    opacity: 0;
-    transform: translateY(-100%);
-
+    @include bp($sm) {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
   }
 
-.hero {
-    min-height: 100vh;
+
+  .hero {
+    max-height: calc(100vh - 304px);
+    overflow: hidden;
+    max-width: 100vw;
+    min-height: 500px;
+    @include bp($sm){
+      min-height: 100vh;
+      transition: opacity .5s;
+    }
     img {
       min-width: 100vw;
-      height: 100vh;
       width: auto;
+      height: 100%; 
       object-fit: cover;
       object-position: center;
       position: absolute;
       top: 0;
       left: 0;
+      right: 0;
+      bottom: 0;
       transition: opacity 1s;
+      @include bp($sm){
+        height: 100vh;
+      }
     }
-    
-    transition: opacity .5s;
-    &.hidden {
-      opacity: 0;
-    }
-
-    .hero-image {
-      position: relative;
-    }
-    
-
     img:not(.active){
       opacity: 0;
     }
+    .hero-image {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .hero-logo {
+      display: none;
+
+      .logo-chabon {
+        font-size: 64px;
+      }
+      .logo-architects {
+        font-size: 42px;
+        letter-spacing: 1px;
+      }
+
+      @include bp($sm){
+        display: flex;
+        z-index: 200;
+        position: fixed;
+        left: 50%;
+        bottom: 50%;
+        width: 300px;
+        height: 300px;
+        top: calc((var(--vh, 1vh) * 50));
+        background-color: #00000066;
+        color: white;
+        border: 2px solid;
+        transform: translate(-50%, -50%);
+        transition: color .5s, background-color .5s, transform .5s;
+      }
+    }
   }
 
-  .hero .header-logo {
-    z-index: 200;
-    position: fixed;
-    left: 50%;
-    bottom: 50%;
-    top: calc((var(--vh, 1vh) * 50));
-    background-color: #00000033;
-    color: white;
-    width: 122px;
-    height: 122px;
-    border: .75px solid;
-    transform: translate(-50%, -50%);
-    transition: color 1s, background-color 1s;
+  #intro {
+    margin-top:24px;
+    p {
+      font-size: 24px;
+    }
     @include bp($sm){
-      transform: translate(-50%, -50%) scale(2.5);
+      opacity: 0;
+      margin-top: 160px;
+      transform: translateY(112px);
+      transition: transform .5s, opacity .5s;
+      p {
+        font-size: 48px;
+      }
     }
-
-    &.dark {
-      color: #000000;
-      background-color: #ffffff99;
-    }
-  }
-
-  .intro {
-    min-height: 100vh;
-    opacity: 0;
-    transition: transform .5s, opacity .5s;
-    transform: translateY(112px);
   }
 
   &.half-scroll {
-    .intro { 
+    #intro { 
       opacity: 1;
       transform: translateY(0); 
     }
-    .hero .header-logo {
+    .hero .hero-logo {
       color: transparent;
       background-color: transparent;
+      transform: translate(-50%, -25%);
+      pointer-events: none;
     }
   }
   
   &.full-scroll{
-    header {
-      opacity: 1;
-      transform: translateY(0);
-    }
     .heroImg {
       opacity: 0;
     }
   }
+
+  header.visible, 
+  &.full-scroll header {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.press {
+  .container {
+    margin-top: 80px;
+    max-width: 1440px;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    
+    @include bp($md){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @include bp($sm){
+    margin-top: 160px;
+
+  }
+
+  img, svg {
+    margin: 32px auto;
+    opacity: .5;
+    max-height: 80px;
+    max-width: 50vw;
+  }
+
 }
 

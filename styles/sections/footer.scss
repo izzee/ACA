@@ -2,13 +2,25 @@ footer {
   margin: 80px 8px 0 8px;
   
   .footer-content {
-    padding: 8px 0 16px 0;
+    padding: 8px 0;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid black;
     max-width: 1440px;
+  }
+
+  small {
+    text-align: right;
+  }
+
+  @include bp($xs) {
+    margin: 80px 16px 0 16px;
+
+    .footer-content {
+      padding: 16px 0;
+    }
   }
 
   @include bp($sm){

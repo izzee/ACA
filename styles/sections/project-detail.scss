@@ -17,10 +17,9 @@
 
   .project-hero {
     width: 100%;
-    max-height: calc(100vh - 256px);
     z-index: -1;
     background-color: $white;
-    margin-top: 8px;
+    margin-top: 16px;
     
     @include bp($sm) {
       padding-top: 16px;
@@ -28,6 +27,7 @@
       position: sticky;
       top: 112px;
       border-top: 1px solid black;
+      max-height: calc(100vh - 256px);
     }
 
     img {
@@ -70,8 +70,8 @@
       }
     }
     @include bp($sm) {
-      position: sticky;
       top: 0px;
+      position: sticky;
       display: grid;
     }
   }
@@ -118,8 +118,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 8px;
     padding-top: 16px;
-    @include bp($sm) {
+    @include bp($xs) {
       grid-gap: 16px;
+    }
+    @include bp($sm) {
       padding-top: 160px;
     }
     @include bp-max($sm){

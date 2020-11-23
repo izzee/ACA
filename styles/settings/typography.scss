@@ -24,6 +24,7 @@ h1 {
   @include bp($sm) {
     font-size: 40px;
     padding-bottom: 16px;
+    height: 56px;
   }
 }
 
@@ -56,6 +57,9 @@ h5 {
   font-size: 14px;
   font-family: 'Luxi Serif', serif;
   @include bp($sm) {
+    font-size: 16px;
+  }
+  @include bp($md) {
     font-size: 24px;
   }
 }
@@ -72,6 +76,7 @@ p, a, address, small {
   }
   @include bp-max($sm) {
     line-height: 1.5;
+
   }
 }
 

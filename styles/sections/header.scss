@@ -16,6 +16,9 @@ header {
     height: 16px;
     a + a {
       margin-left: 8px;
+      @include bp($xs){
+        margin-left: 16px;
+      }
       @include bp($sm){
         margin-left: 32px;
       }
@@ -35,6 +38,9 @@ header {
   justify-content: space-between;
   margin: auto;
   max-width: 1440px;
+  @include bp($xs){
+    padding: 16px;
+  }
   @include bp($sm) {
     padding: 32px;
   }
